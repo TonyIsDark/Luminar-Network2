@@ -1,128 +1,227 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<html xmlns="http://www.w3.org/1999/xhtml" data-l10n-sync="true" dir="ltr" lang="pt-BR">
-  <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src chrome:; object-src 'none'" />
-    <meta name="color-scheme" content="light dark" />
-    <title data-l10n-id="neterror-page-title">Problemas ao carregar a página</title>
-    <link rel="stylesheet" href="chrome://global/skin/aboutNetError.css" type="text/css" media="all" />
-    <link rel="icon" id="favicon" href="chrome://global/skin/icons/info.svg" />
-    <link rel="localization" href="branding/brand.ftl" />
-    <link rel="localization" href="toolkit/neterror/certError.ftl" />
-    <link rel="localization" href="toolkit/neterror/netError.ftl" />
-  </head>
-
-  <body class="neterror">
-    <!-- PAGE CONTAINER (for styling purposes only) -->
-    <div class="container">
-      <div id="text-container">
-        <!-- Error Title -->
-        <div class="title">
-          <h1 class="title-text" data-l10n-id="csp-xfo-error-title">O Firefox não pode abrir esta página</h1>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Minecraft Server Name]</title>
+    <link rel="icon" type="image/png" href="https://luminarnetwork.netlify.app/media/favicon.png">
+    <link rel="stylesheet" href="[Minecraft%20Server%20Name]_arquivos/style.css">
+    <link href="[Minecraft%20Server%20Name]_arquivos/css.css" rel="stylesheet">
+    <link rel="stylesheet" href="[Minecraft%20Server%20Name]_arquivos/font-awesome.min.css">
+</head>
+<body>
+    <script src="[Minecraft%20Server%20Name]_arquivos/jquery.min.js"></script>
+    <nav class="desktop_navbar">
+      <a href="#"><img class="desktop_navbar_logo_img" src="[Minecraft%20Server%20Name]_arquivos/logo_small.png" alt="logo"></a>
+      <a href="https://wiki.example.com/" class="desktop_navbar_link">Wiki</a>
+      <a href="#discord" class="desktop_navbar_link scroll">Discord</a>
+      <a href="#about" class="desktop_navbar_link scroll">Staff</a>
+      <div class="desktop_navbar_link2_div">
+          <a href="#join" class="desktop_navbar_link2 scroll">Entrar!</a>
+      </div>
+    </nav>
+    <div class="mobile_navbar">
+      <a href="#" class="mobile_navbar_logo_img_a"><img class="mobile_navbar_logo_img" src="[Minecraft%20Server%20Name]_arquivos/logo_small.png" alt="logo"></a>
+      <div id="mobile_navbar_links">
+          <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="https://wiki.example.com/">Wiki</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#discord">Community</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#about">About Us</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#join">Join Us</a>
         </div>
-
-        <!-- Short Description -->
-        <p id="errorShortDesc" data-l10n-args="{&quot;errorMessage&quot;:&quot;&quot;,&quot;hostname&quot;:&quot;imgur.com&quot;}" data-l10n-id="cert-error-ssl-connection-error" hidden="">Ocorreu um erro durante uma conexão com imgur.com. </p>
-        <p id="errorShortDesc2"></p>
-
-        <div id="errorWhatToDo" hidden="">
-          <p id="errorWhatToDoTitle" data-l10n-id="certerror-what-can-you-do-about-it-title">O que você pode fazer a respeito?</p>
-          <p id="badStsCertExplanation" hidden=""></p>
-          <p id="errorWhatToDoText"></p>
+        <div class="icon" onclick="mobile_navbar_link_hider()">
+            <i class="fa fa-bars"></i>
         </div>
-
-        <!-- Long Description -->
-        <div id="errorLongDesc" data-l10n-args="{&quot;hostname&quot;:&quot;imgur.com&quot;}" data-l10n-id="csp-xfo-blocked-long-desc">Para
- proteger sua segurança, imgur.com não permite que o Firefox exiba a 
-página se outro site o tiver incorporado. Para ver esta página, você 
-precisa abrir em uma nova janela.</div>
-
-        <p id="trrOnlyContainer" hidden="">
-          <p id="trrOnlyMessage"></p>
-          <div class="trr-message-container">
-            <span id="trrOnlyDescription"></span>
-            <p id="trrLearnMoreContainer" hidden="">
-              <a id="trrOnlylearnMoreLink" target="_blank" rel="noopener noreferrer" data-l10n-id="neterror-learn-more-link">Saiba mais…</a>
-            </p>
+        <script>
+            function mobile_navbar_link_hider() {
+            var x = document.getElementById("mobile_navbar_links");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+            } 
+        </script>
+    </div>
+    <div class="mainflex">
+      <div class="main1">
+        <a class="main1_logo_a" href="#">
+          <img class="main1_logo" src="[Minecraft%20Server%20Name]_arquivos/logo.png" alt="logo">
+        </a>
+        <div class="main1_description">
+          <a>servidor de Minecraf pirata e original,<br>De</a>
+          <a class="main1_actcent">1.7 até a 1.20</a><a>.</a>
+        </div>
+        <div class="main1_ipcopier_div">
+          <button class="main1_ipcopier" onclick="copyText()" type="button">
+            <span class="main1_ipcopier_text1">luminarnetwork.falix.gg</span>
+            <br>
+            <span class="main1_ipcopier_text2">Clique para copiar</span>
+          </button>
+          <script>
+            function copyText() {
+                navigator.clipboard.writeText
+            ("luminarnetwork.falix.gg");
+                }
+            $(document).ready(function() {
+            $('.main1_ipcopier').click(function() {
+                var popup = $('<div>', { class: 'main1_popup' })
+                .append($('<h3 class="copy_confirm">').text('Copied IP to clipboard'))
+                $(this).after(popup);
+                setTimeout(function() {
+                popup.remove();
+                }, 1000);
+            });
+            });
+        </script>
+        </div>
+        <a href="#more" class="scroll">
+          <img alt="downarrow" class="main1_downarrow" src="[Minecraft%20Server%20Name]_arquivos/downarrow.png">
+        </a>
+        <script>
+          const scrollLinks = document.querySelectorAll('.scroll');
+          scrollLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+              event.preventDefault();
+              const target = document.querySelector(link.getAttribute('href'));
+              const offsetTop = target.offsetTop;
+              window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+              });
+            });
+          });
+        </script>
+      </div>
+      <div id="more"></div>
+      <div class="main2">
+        <a class="headline">Nosso servidor</a>
+        <div class="main2_features_div">
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="[Minecraft%20Server%20Name]_arquivos/placeholder.png">
+            <a class="main2_feature_headline">Among Us</a>
+            <a class="main2_feature_text">Feature description</a>
           </div>
-          <p data-l10n-id="neterror-dns-not-found-trr-third-party-warning2">Você pode continuar com seu resolvedor de DNS padrão. No entanto, terceiros podem conseguir ver quais sites você visita.</p>
-        </p>
-
-        <p id="nativeFallbackContainer" hidden="">
-          <p id="nativeFallbackMessage"></p>
-          <div class="trr-message-container">
-            <span id="nativeFallbackDescription"></span>
-            <p id="nativeFallbackLearnMoreContainer" hidden="">
-              <a id="nativeFallbackLearnMoreLink" target="_blank" rel="noopener noreferrer" data-l10n-id="neterror-learn-more-link">Saiba mais…</a>
-            </p>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="[Minecraft%20Server%20Name]_arquivos/placeholder.png">
+            <a class="main2_feature_headline">Criativo</a>
+            <a class="main2_feature_text">Feature description</a>
           </div>
-          <p data-l10n-id="neterror-dns-not-found-trr-third-party-warning2">Você pode continuar com seu resolvedor de DNS padrão. No entanto, terceiros podem conseguir ver quais sites você visita.</p>
-        </p>
-
-        <p id="tlsVersionNotice" hidden=""></p>
-
-        <p id="learnMoreContainer">
-          <a id="learnMoreLink" target="_blank" rel="noopener noreferrer" data-telemetry-id="learn_more_link" data-l10n-id="neterror-learn-more-link" href="https://support.mozilla.org/1/firefox/115.0.2/Linux/pt-BR/xframe-neterror-page">Saiba mais…</a>
-        </p>
-
-        <div id="openInNewWindowContainer" class="button-container">
-          <p><a id="openInNewWindowButton" target="_blank" rel="noopener noreferrer" href="https://imgur.com/78RPeUY">
-          <button class="primary" data-l10n-id="open-in-new-window-for-csp-or-xfo-error">Abrir site em nova janela</button></a></p>
-        </div>
-
-        <!-- UI for option to report certificate errors to Mozilla. Removed on
-             init for other error types .-->
-        <div id="prefChangeContainer" class="button-container" hidden="">
-          <p data-l10n-id="neterror-pref-reset">Parece que as configurações de segurança de rede podem estar causando isso. Quer restaurar as configurações padrão?</p>
-          <button id="prefResetButton" class="primary" data-l10n-id="neterror-pref-reset-button">Restaurar configurações padrão</button>
-        </div>
-
-        <div id="certErrorAndCaptivePortalButtonContainer" class="button-container" hidden="">
-          <button id="returnButton" class="primary" data-telemetry-id="return_button_top" data-l10n-id="neterror-return-to-previous-page-recommended-button">Voltar (recomendado)</button>
-          <button id="openPortalLoginPageButton" class="primary" data-l10n-id="neterror-open-portal-login-page-button" hidden="">Abrir página de acesso à rede</button>
-          <button id="certErrorTryAgainButton" class="primary try-again" data-l10n-id="neterror-try-again-button" hidden="">Tentar novamente</button>
-          <button id="advancedButton" data-telemetry-id="advanced_button" data-l10n-id="neterror-advanced-button">Avançado…</button>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="[Minecraft%20Server%20Name]_arquivos/placeholder.png">
+            <a class="main2_feature_headline">TNT Run</a>
+            <a class="main2_feature_text">Feature description</a>
+          </div>
+          
+          
         </div>
       </div>
-
-      <div id="netErrorButtonContainer" class="button-container" hidden="">
-        <button id="neterrorTryAgainButton" class="primary try-again" data-l10n-id="neterror-try-again-button" data-telemetry-id="try_again_button">Tentar novamente</button>
-        <button id="trrExceptionButton" data-l10n-id="neterror-add-exception-button" data-telemetry-id="add_exception_button" hidden="">Sempre continuar para este site</button>
-        <button id="trrSettingsButton" data-l10n-id="neterror-settings-button" data-telemetry-id="settings_button" hidden="">Alterar configurações de DNS</button>
-        <button id="nativeFallbackContinueThisTimeButton" data-l10n-id="neterror-trr-continue-this-time" data-telemetry-id="continue_button" hidden="">Continuar desta vez</button>
-        <button id="nativeFallbackIgnoreButton" data-l10n-id="neterror-disable-native-feedback-warning" data-telemetry-id="disable_warning" hidden="">Sempre continuar</button>
-      </div>
-
-      <div class="advanced-panel-container">
-        <div id="badCertAdvancedPanel" class="advanced-panel" hidden="">
-          <p id="badCertTechnicalInfo"></p>
-          <a id="viewCertificate" href="javascript:void(0)" data-l10n-id="neterror-view-certificate-link">Ver certificado</a>
-          <div id="advancedPanelButtonContainer" class="button-container">
-            <button id="advancedPanelReturnButton" class="primary" data-telemetry-id="return_button_adv" data-l10n-id="neterror-return-to-previous-page-recommended-button">Voltar (recomendado)</button>
-            <button id="advancedPanelTryAgainButton" class="primary try-again" data-l10n-id="neterror-try-again-button" hidden="">Tentar novamente</button>
-            <button id="exceptionDialogButton" data-telemetry-id="exception_button" data-l10n-id="neterror-override-exception-button">Aceitar o risco e continuar</button>
+      <div id="discord"></div>
+      <div class="main4">
+        <a class="headline">Junte-se ao nosso Discord</a>
+        <div class="main4_dc_div">
+          <iframe class="main4_dc_widget" src="https://imgur.com/78RPeUY.png" title="discord" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" width="350" height="500"></iframe>
+          <div class="main4_dc_description_div">
+            <a class="main4_dc_description_title">Entre já!</a>
+            <a class="main4_dc_description_text">- conheça outros jogadores<br>- tire suas dúvidas<br>- fique por dentro de todas as novidades<br>- Nos auxilie a melhorar com seu feedback<br><br>e mais...</a>
+            <a class="main4_dc_button_a" href="https://discord.gg/hWBjepTMjF">
+              <div class="main4_dc_button">Entrar</div>
+            </a>
           </div>
         </div>
-
-        <div id="blockingErrorReporting" class="advanced-panel">
-          <p class="toggle-container-with-text">
-            <input type="checkbox" id="automaticallyReportBlockingInFuture" role="checkbox" checked="checked" />
-            <label for="automaticallyReportBlockingInFuture" data-l10n-id="neterror-error-reporting-automatic">Relatar erros como este para ajudar a Mozilla a identificar e bloquear sites maliciosos</label>
-          </p>
+      </div>
+      <div id="about"></div>
+      <div class="main5">
+        <a class="headline">Nossa Staff</a>
+        <div class="main5_admin_div">
+          <div class="main5_admins_div main5_admins_dev_type2">
+            <img class="main5_admins_img" alt="admin member img" src="[Minecraft%20Server%20Name]_arquivos/member_placeholder.webp">
+            <div class="main5_admins_description_div">
+              <a class="main5_admins_description_rank main5_admins_description_rank_owner">DIretor</a>
+              <a class="main5_admins_description_title" href="https://example.com/">TonyisDark</a>
+              <a class="main5_admins_description">Desenvolvedor Principal<br>Criador e fundador do servidor.</a>
+            </div>
+          </div>
+          <div class="main5_admins_div main5_admins_dev_type1">
+            <img class="main5_admins_img" alt="admin member img" src="[Minecraft%20Server%20Name]_arquivos/member_placeholder.webp">
+            <div class="main5_admins_description_div">
+              <a class="main5_admins_description_rank main5_admins_description_rank_admin">Segundo Diretor</a>
+              <a class="main5_admins_description_title" href="https://www.instagram.com/wakecoffeep3">Coffeep3</a>
+              <a class="main5_admins_description">Desenvolvedor secundário<br>Cofundador e Suporte no desinvolvimento do servidor</a>
+            </div>
+          </div>
         </div>
-
-        <div id="certificateErrorDebugInformation" class="advanced-panel" hidden="">
-          <button id="copyToClipboardTop" data-telemetry-id="clipboard_button_top" data-l10n-id="neterror-copy-to-clipboard-button">Copiar texto para área de transferência</button>
-          <div id="certificateErrorText"></div>
-          <button id="copyToClipboardBottom" data-telemetry-id="clipboard_button_bot" data-l10n-id="neterror-copy-to-clipboard-button">Copiar texto para área de transferência</button>
+        <div class="main5_supporter_div">
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="[Minecraft%20Server%20Name]_arquivos/member_placeholder.webp">
+            <div class="main5_supporters_description_div">
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Supporter]</a>
+              <a class="main5_supporters_description_title">Replacable Supporter 1</a>
+              <a class="main5_supporters_description">Supporter<br>Description</a>
+            </div>
+          </div>
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="[Minecraft%20Server%20Name]_arquivos/member_placeholder.webp">
+            <div class="main5_supporters_description_div">
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Supporter]</a>
+              <a class="main5_supporters_description_title">Replacable Supporter 2</a>
+              <a class="main5_supporters_description">Supporter<br>Description</a>
+            </div>
+          </div>
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="[Minecraft%20Server%20Name]_arquivos/member_placeholder.webp">
+            <div class="main5_supporters_description_div">
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Supporter]</a>
+              <a class="main5_supporters_description_title">Replacable Supporter 3</a>
+              <a class="main5_supporters_description">Supporter<br>Description</a>
+            </div>
+          </div>
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="[Minecraft%20Server%20Name]_arquivos/member_placeholder.webp">
+            <div class="main5_supporters_description_div">
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Supporter]</a>
+              <a class="main5_supporters_description_title">Replacable Supporter 4</a>
+              <a class="main5_supporters_description">Supporter<br>Description</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="join"></div>
+      <div class="main3">
+        <a class="headline">How to join</a>
+        <div class="main3_join_div_div">
+          <div class="main3_join_div">
+            <a class="main3_join_title">Java</a>
+            <div class="main3_join_content_div">
+              <div class="main3_join_categories">
+                <a>IP:</a>
+                <a>versão</a>
+              </div>
+              <div class="main3_join_values">
+                <a>luminarnetwork.falix.gg</a>
+                <a>1.7-1.20</a>
+              </div>
+            </div>
+          </div>
+          <div class="main3_join_div">
+            <a class="main3_join_title">Bedrock</a>
+            <div class="main3_join_content_div">
+              <div class="main3_join_categories">
+                <a>IP:</a>
+                <a>Porta:</a>
+              </div>
+              <div class="main3_join_values">
+                <a>luminarnetwork.falix.gg</a>
+                <a>?????</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </body>
-  <script src="chrome://global/content/neterror/aboutNetErrorCodes.js"></script>
-  <script type="module" src="chrome://global/content/aboutNetError.mjs"></script>
-</html>
+    <footer class="copyright_div">
+      <a href="https://github.com/FQQD/MCServer-Web-Template" class="copyright">Made by FQQD 2023 - Edited by Coffeep3 2023</a>
+    </footer>
+  
+
+</body></html>
