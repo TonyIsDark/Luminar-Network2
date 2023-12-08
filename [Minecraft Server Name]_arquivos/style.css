@@ -1,9 +1,9 @@
 :root {
     --nice-padding: 6rem;
     --roundness: 0.75rem;
-    --accent1: #02db02;
-    --accent2: #05b305;
-    --accent2_transp: #05b30555;
+    --accent1: #3102db;
+    --accent2: #6405b3;
+    --accent2_transp: #3305b354;
     --background1: #212529;
     --background2: #16191b;
 
@@ -98,7 +98,7 @@ body {
     text-align: center;
 }
 .desktop_navbar_link:hover {
-    color: var(--accent1);
+    color: #1d02db;
 }
 
 .desktop_navbar_link2 {
